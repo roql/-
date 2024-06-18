@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내가 만드는 페이지</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .page {
+      display: none;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 60px;
+      max-width: 600px;
+      width: 200%;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    button {
+      padding: 20px 40px;
+      font-size: 18px;
+      margin: 20px;
+      cursor: pointer;
+      background-color: #2f00ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div id="page1" class="page active">
+  <h1>문제 1번</h1>
+  <button onclick="nextPage()">다음 페이지</button>
+  <p> Which list contains the most recent actions performed by a Windows User??<br>
+  <strong>1. Recents<br>
+  2. ctivity<br>
+  3. Windows Error Log<Br>
+  4.  MRU</p>  </strong>
+
+</div>
+
+<div id="page2" class="page">
+  <h1>문제 2번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  Which of the following Event Correlation Approach is an advanced correlation method that
+assumes and predicts what an attacker can do next after the attack by studying the statistics and
+probability and uses only two variables?<br>
+<strong>A. Bayesian Correlation<br>
+B. Rule-Based Approach<br>
+C. Vulnerability-Based Approach<br>
+D. Route Correlation<br></strong>
+</div>
+
+<div id="page3" class="page">
+  <h1>문제 3번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  Which of the following is a part of a Solid-State Drive (SSD)?<br>
+<strong>A. Head<br>
+B. Cylinder<br>
+C. NAND-based flash memory<br>
+D. Spindle<br></strong> 
+</div>
+
+<div id="page4" class="page">
+  <h1>문제 4번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  Which list contains the most recent actions performed by a Windows User?<br>
+<strong> A. Recents<br>
+B. Activity<br>
+C. Windows Error Log<br>
+D. MRU<br></strong>
+<br>
+</div>
+
+<div id="page5" class="page">
+  <h1>문제 5번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+    Which of the following tool enables data acquisition and duplication?<br>
+    <strong>A. Xplico<br>
+    B. Wireshark<br>
+    C. DriveSpy<br>
+    D. Colasoft's Capsa</strong>
+</div>
+
+
+<div id="page6" class="page">
+  <h1>문제 6번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  You are working as a Computer forensics investigator for a corporation on a computer abuse
+case. You discover evidence that shows the subject of your investigation is also embezzling
+money from the company. The company CEO and the corporate legal counsel advise you to
+contact law enforcement and provide them with the evidence that you have found. The law
+enforcement officer that responds requests that you put a network sniffer on your network and
+monitor all traffic to the subject's computer. You inform the officer that you will not be able to
+comply with that request because doing so would:<br>
+<strong>A. Make you an agent of law enforcement<br>
+  B. Cause network congestion<br>
+  C. Violate your contract<br>
+  D. Write information to the subject's hard drive</strong>
+
+</div>
+
+
+<div id="page7" class="page">
+  <h1>문제 7번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  George is the network administrator of a large Internet company on the west coast. Per corporate
+policy, none of the employees in the company are allowed to use FTP or SFTP programs without
+obtaining approval from the IT department. Few managers are using SFTP program on their
+computers. Before talking to his boss, George wants to have some proof of their activity. George
+wants to use Ethereal to monitor network traffic, but only SFTP traffic to and from his network.
+What filter should George use in Ethereal?<br>
+  <strong>A. src port 22 and dst port 22<br>
+    B. net port 22<br>
+    C. udp port 22 and host 172.16.28.1/24<br>
+    D. src port 23 and dst port 23<br> </strong>
+</div>
+
+
+<div id="page8" class="page">
+  <h1>문제 8번</h1>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button><br>
+  When monitoring for both intrusion and security events between multiple computers, it is essential
+that the computers' clocks are synchronized. Synchronized time allows an administrator to
+reconstruct what took place during an attack against multiple computers. Without synchronized
+time, it is very difficult to determine exactly when specific events took place, and how events
+interlace. What is the name of the service used to synchronize time among multiple computers?<br>
+  <strong>A. Time-Sync Protocol<br>
+    B. Universal Time Set<br>
+    C. Network Time Protocol<br>
+    D. SyncTime Service<br></strong>
+</div>
+
+<div id="page9" class="page">
+  <h1>페이지 9</h1>
+  <p>이것은 네 번째 페이지입니다.</p>
+  <button onclick="prevPage()">이전 페이지</button>
+  <button onclick="nextPage()">다음 페이지</button>
+</div>
+
+<script>
+  let currentPage = 1;
+
+  function showPage(pageNumber) {
+    document.querySelectorAll('.page').forEach(page => {
+      page.classList.remove('active');
+    });
+
+    document.getElementById(`page${pageNumber}`).classList.add('active');
+    currentPage = pageNumber;
+  }
+
+  function nextPage() {
+    if (currentPage < 1000) {
+      showPage(currentPage + 1);
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 1) {
+      showPage(currentPage - 1);
+    }
+  }
+</script>
+
+
+</body>
+</html>
